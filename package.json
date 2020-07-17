@@ -1,0 +1,26 @@
+{
+  "name": "fantasy-chess",
+  "version": "1.0.0",
+  "description": "Similar to Chess, but with a twist.\r Players can now group pawns together to form small armies and mount an attack on the opponents forces.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dannonb/Fantasy-Chess.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dannonb/Fantasy-Chess/issues"
+  },
+  "homepage": "https://github.com/dannonb/Fantasy-Chess#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "nodemon": "^2.0.4",
+    "path": "^0.12.7",
+    "socket.io": "^2.3.0"
+  }
+}
