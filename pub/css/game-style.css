@@ -60,6 +60,12 @@ button {
 @media screen and (max-width: 600px) {
     #anim {
         height: 60%;
+
+    }
+
+    #questions {
+        height: 10%;
+        
     }
 }
 
