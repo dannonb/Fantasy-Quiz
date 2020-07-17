@@ -49,19 +49,19 @@ const play = async function (div) {
         if (warrior > wizard) {
             
             div.innerHTML = `You are a Warrior`
-            animate()
+            animate('warrior')
             return
         }
         if (warrior < wizard) {
             
             div.innerHTML = `You are a Wizard`
-            animate()
+            animate('wiz')
             return
         }
 
         if (warrior === wizard) {
             div.innerHTML = `You are a Paladin`
-            animate()
+            animate('wiz')
             return
         }
     }
@@ -103,21 +103,27 @@ const screenify = function (q) {
 }
 
 
-const animate = () => {
+const animate = (name) => {
     let anim = document.querySelector('#anim')
-    let num = random(2, 1)
+    let num = random()
     anim.style.display = "block"
-    anim.style.backgroundImage = `url("/img/knight${num}.png")`
+    
+    if (name === "warrior") {
+        anim.style.backgroundImage = `url("/img/knight${num}.png")`
+    } else {
+        anim.style.backgroundImage = `url("/img/wiz${num}.png")`
+    }
     
 }
 
-const random = function (max, min) {
+const random = function () {
 
-    let random = Math.floor(Math.random() * max - min + 1) + 1
+    let random = Math.floor(Math.random() * 2) + 1
+    
     return random
 }
 
-console.log(random(5, 1))
+
 play()
 
 

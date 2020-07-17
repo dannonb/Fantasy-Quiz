@@ -26,7 +26,7 @@ body {
 
 #questions {
     border: 2px solid black;
-    width: 50%;
+    width: 40%;
     height: 25%;
     background-color: white;
     border-radius: 5px 5px;
@@ -38,17 +38,21 @@ body {
 }
 
 #anim {
-    border: 2px solid black;
-    width: 50%;
+    
+    width: 40%;
     height: 40%;
     border-radius: 5px 5px;
     transition: .5s ease-in-out;
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: white;
+    
     background-position: center; 
     display: none;
     
+}
+
+button {
+    font-family: 'MedievalSharp', cursive;
 }
 
 

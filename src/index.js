@@ -13,6 +13,4 @@ const pubDir = path.join(__dirname, '../pub')
 
 app.use(express.static(pubDir))
 
-
-
 server.listen(port)
