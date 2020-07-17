@@ -105,8 +105,18 @@ const screenify = function (q) {
 
 const animate = (name) => {
     let anim = document.querySelector('#anim')
+    let question = document.querySelector('#questions')
     let num = random()
     anim.style.display = "block"
+    
+    
+    //redoing question styles to look better for mobile
+    question.style.backgroundColor = 'rgba(0, 0, 0, 0)'
+    question.style.border = 'none'
+    question.style.marginTop = '30%'
+    question.style.height = 'auto'
+    question.style.fontSize = '30px'
+
     
     if (name === "warrior") {
         anim.style.backgroundImage = `url("/img/knight${num}.png")`

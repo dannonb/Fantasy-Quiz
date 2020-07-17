@@ -30,7 +30,6 @@ body {
     height: 25%;
     background-color: white;
     border-radius: 5px 5px;
-    transition: .5s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,10 +42,8 @@ body {
     width: 40%;
     height: 40%;
     border-radius: 5px 5px;
-    transition: .5s ease-in-out;
     background-repeat: no-repeat;
     background-size: contain;
-    
     background-position: center; 
     display: none;
     
@@ -59,11 +56,16 @@ button {
 
 @media screen and (max-width: 600px) {
     #anim {
-        height: 80%;
+        height: 100%;
         width: 80%;
+        transform: scale(1.2);
     }
 
-    
+    #questions {
+        width: 80%;
+        height: 20%;
+        
+    }
 }
 
 
