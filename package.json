@@ -4,7 +4,9 @@
   "description": "Similar to Chess, but with a twist.\r Players can now group pawns together to form small armies and mount an attack on the opponents forces.",
   "main": "index.js",
   "scripts": {
+    "start": "node src/index.js",
     "dev": "nodemon src/index.js"
+    
   },
   "repository": {
     "type": "git",
