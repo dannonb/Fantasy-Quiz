@@ -66,6 +66,14 @@ button {
         height: 20%;
         
     }
+
+    body {
+        overflow: hidden;
+    }
+
+    html {
+        overflow: hidden;
+    }
 }
 
 
